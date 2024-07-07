@@ -1,3 +1,5 @@
+# pomohero
+
 - [Overview](#overview)
 - [Features](#features)
 - [Install](#install)
@@ -6,13 +8,11 @@
   - [Learn More](#learn-more)
 - [License](#license)
 
-# POMOHERO
-
 ## Overview
 
 just another pomodoro + to-list productivity website, simpler to use than ever. inspired by francesco cirillo's' pomodoro technique, based on the principles detailed [here](https://www.pomodorotechnique.com).
 
-pomohero is in its early stages, so feedback and contributions are welcome and appreciated!
+**pomohero** is in its early stages, so feedback and contributions are welcome and appreciated!
 
 ## Features
 
@@ -22,14 +22,14 @@ pomohero is in its early stages, so feedback and contributions are welcome and a
 
 ### Development
 
-Pomohero is built with [React.js](https://github.com/facebook/react) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**pomohero** is built with [React.js](https://github.com/facebook/react) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-After cloning this repository, in the project directory, you can run the following commands to set up Pomohero.
+After cloning this repository, in the project directory, you can run the following commands to set up **pomohero**.
 
 ### Build Setup
 
 ```bash
-# serve with hot reload at localhost:9080
+# serve with hot reload at localhost:3000
 yarn start 
 
 # build for production
