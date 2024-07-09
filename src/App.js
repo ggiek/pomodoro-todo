@@ -65,8 +65,8 @@ export default function App() {
   }
 
   return (
-    <main>
-      <section>
+    <div>
+      <div>
         <SettingsContext.Provider value={{
           showSettings,
           setShowSettings,
@@ -75,20 +75,28 @@ export default function App() {
           setWorkMinutes,
           setBreakMinutes,
         }}>
-          {showSettings ? <Settings /> : <Timer />}
+          {showSettings ? 
+          <div className='main'> 
+            <Settings />
+          </div> 
+          : 
+          <div className='app'>
+            <Timer />
+            <div>
+              <h1>{numberComplete}/{numberTotal} Complete</h1>
+              <h2>{getMessage()}</h2>
+              <TaskForm onAdd={addTask} />
+              {tasks.map((task, index) => (
+                <Task {...task}
+                  onRename={newName => renameTask(index, newName)}
+                  onTrash={() => removeTask(index)}
+                  onToggle={done => updateTaskDone(index, done)} />
+              ))}
+            </div>
+          </div>
+        }
         </SettingsContext.Provider>
-      </section>
-      <section>
-        <h1>{numberComplete}/{numberTotal} Complete</h1>
-        <h2>{getMessage()}</h2>
-        <TaskForm onAdd={addTask} />
-        {tasks.map((task, index) => (
-          <Task {...task}
-                onRename={newName => renameTask(index,newName)}
-                onTrash={() => removeTask(index)}
-                onToggle={done => updateTaskDone(index, done)} />
-        ))}
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }

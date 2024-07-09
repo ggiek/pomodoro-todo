@@ -5,14 +5,28 @@
 
 body {
   background-color: #30384b;
-  color: #eee;
+  color: #ddd;
 }
 
-main {
-  padding-top: 50px;
-  max-width: 340px;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
+
+}
+
+.main {
+  margin: 20px;
   text-align: center;
+  display: flex;
+  align-items: left;
+}
+
+.app { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
 }
 
 button {
