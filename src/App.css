@@ -76,11 +76,12 @@ form input[type="text"] {
   width: 100%;
 }
 
-form button {
+.form-button {
   background-color: #61DAFB;
-  border:0;
+  border: 0;
+  width: 20px;
   border-radius: 6px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 div.task {
@@ -104,20 +105,20 @@ div.task.done {
 }
 
 div.task-name, div.task form {
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 div.task span {
-  position:relative;
+  position: relative;
 }
 
 div.task span:before {
-  content:'';
-  display:block;
-  width:0;
-  height:1px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
   background-color: #ddd;
-  position:absolute;
+  position: absolute;
   top: 10px;
   transition: width .1s linear;
 }
@@ -135,14 +136,15 @@ div.checkbox {
   align-items: center;
 }
 
-button.trash {
-  background:none;
-  border:none;
-  display:flex;
-  cursor:pointer;
+.trash {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
 }
 
-button.trash svg {
+.trash-svg {
   fill: #888;
   height: 14px;
 }

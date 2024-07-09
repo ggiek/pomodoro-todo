@@ -10,7 +10,7 @@ export default function TaskForm({onAdd}) {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <button>+</button>
+      <button className="form-button">+</button>
       <input type="text"
              value={taskName}
              onChange={e => setTaskName(e.target.value)}
