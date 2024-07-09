@@ -29,7 +29,7 @@ After cloning this repository, in the project directory, you can run the followi
 ### Build Setup
 
 ```bash
-# serve with hot reload at localhost:3000
+# run in development mode
 yarn start 
 
 # build for production
