@@ -7,6 +7,7 @@
   - [Build Setup](#build-setup)
   - [Learn More](#learn-more)
 - [License](#license)
+- [Credit](#credit)
 
 ## Overview
 
@@ -30,10 +31,10 @@ After cloning this repository, in the project directory, you can run the followi
 
 ```bash
 # run in development mode
-yarn start 
+npm start 
 
 # build for production
-yarn build
+npm run build
 ```
 
 Now, you should be able to run the app in the development mode.
