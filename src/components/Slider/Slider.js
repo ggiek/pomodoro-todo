@@ -1,7 +1,7 @@
 import './Slider.css';
 import { useContext } from 'react';
 import ReactSlider from 'react-slider';
-import SettingsContext from './SettingsContext';
+import SettingsContext from '../../contexts/SettingsContext';
 
 export default function Slider() {
     const settingsInfo = useContext(SettingsContext);

@@ -1,10 +1,10 @@
 import './App.css';
 import { useState, useEffect } from "react";
-import Timer from "./Timer";
-import Settings from "./Settings";
-import SettingsContext from "./SettingsContext";
-import TaskForm from "./TaskForm";
-import Task from "./Task";
+import Timer from "./components/Timer/Timer";
+import Settings from "./components/Settings/Settings";
+import SettingsContext from "./contexts/SettingsContext";
+import TaskForm from "./components/TaskForm/TaskForm";
+import Task from "./components/Task/Task";
 
 export default function App() {
   const [showSettings, setShowSettings] = useState(false);
