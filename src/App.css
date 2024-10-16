@@ -4,28 +4,33 @@
 }
 
 body {
-  background-color: #30384b;
-  color: #ddd;
+  background-color: #fff;
+  color: #000;
 }
 
 * {
   box-sizing: border-box;
-
+  outline: none !important;
 }
 
 .main {
-  margin: 20px;
+  margin: 1.25rem;
   text-align: center;
   display: flex;
   align-items: left;
 }
 
-.app { 
+.app {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  padding-top: 50px;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 3rem;
+}
+
+.timer, .pomodoro {
+  padding: 1rem;
 }
 
 button {
@@ -33,74 +38,72 @@ button {
   color: rgba(255,255,255,0.8);
   border: 0;
   display: inline-block;
-  width: 100px;
+  width: 6.25rem;
   cursor: pointer;
 }
 
 button.with-text {
   width: auto;
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 10px;
-  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.25rem;
   font-size: 1.4rem;
-  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 button.with-text svg {
-  width: 36px;
+  width: 2.25rem;
   float: left;
-  margin-right: 5px;
+  margin-right: 0.3rem;
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  font-size: 20px;
+  margin-bottom: 0.6rem;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
 }
 
-.settings .button {
+.settings-button {
   display: flex;
   align-items: left;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  margin-bottom: 3rem;
 }
 
 form {
-  border: 3px solid #30313D;
-  border-radius: 10px;
-  padding: 5px;
+  border: 0.2rem solid #fff;
+  border-radius: 0.6rem;
+  padding: 0.3rem;
   display: flex;
 }
 
 form input[type="text"] {
-  background: none;
-  color:#fff;
-  border:0;
-  padding: 0 8px;
   display: block;
-  width: 100%;
-}
-
-.form-button {
-  background-color: #61DAFB;
+  color: #000;
+  caret-color: #000;
   border: 0;
-  width: 20px;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 0 0.5rem;
+  width: 100%;
+  font-size: 1rem;
 }
 
 div.task {
-  background-color: #30313D;
-  border-radius: 10px;
-  padding: 5px 9px;
-  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.3rem;
   display: flex;
   align-items: center;
   transition: opacity .3s linear;
 }
 
 div.task svg {
-  height: 20px;
-  margin-right: 6px;
+  height: 1.25rem;
+  margin-right: 0.3rem;
   fill: #61DAFB;
 }
 
@@ -120,10 +123,10 @@ div.task span:before {
   content: '';
   display: block;
   width: 0;
-  height: 1px;
+  height: 0.05rem;
   background-color: #ddd;
   position: absolute;
-  top: 10px;
+  top: 0.6rem;
   transition: width .1s linear;
 }
 
@@ -150,11 +153,11 @@ div.checkbox {
 
 .trash-svg {
   fill: #888;
-  height: 14px;
+  height: 0.8rem;
 }
 
 div.task input {
-  border: 2px solid #555;
-  border-radius:5px;
-  padding: 2px 4px;
+  border: 0.1rem solid #555;
+  border-radius:0.3rem;
+  padding: 0.1rem 0.25rem;
 }

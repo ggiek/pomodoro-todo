@@ -67,18 +67,18 @@ export default function Timer() {
 
   return (
     <div>
-      <div style={{ marginBottom:'20px', display: 'flex' }}>
+      <div className="settings-button">
         <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
       </div>
       <CircularProgressbar
         value={percentage}
         text={minutes + ':' + seconds}
         styles={buildStyles({
-        textColor:'#fff',
+        textColor:'#000',
         pathColor:mode === 'work' ? red : green,
         tailColor:'rgba(255,255,255,.2)',
       })} />
-      <div style={{marginTop:'20px'}}>
+      <div style={{ marginTop:'20px' }}>
         {isPaused
           ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; }} />
           : <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; }} />}

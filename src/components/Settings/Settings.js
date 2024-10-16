@@ -7,9 +7,7 @@ export default function Settings() {
 
   return (
     <div>
-      <div styles={{ position: "absolute", top: 10, left: 10, marginTop: "20px" }}>
-        <BackButton onClick={() => settingsInfo.setShowSettings(false)} />
-      </div>
+      <BackButton onClick={() => settingsInfo.setShowSettings(false)} />
     </div>
   )
 }

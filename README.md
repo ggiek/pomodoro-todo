@@ -44,7 +44,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser o
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) or [review the documentation](https://facebook.github.io/create-react-app/docs/getting-started) for more information.
 
-### Credit
+### Acknowledgments
 
 - Coding with Dawid's tutorials on creating [pomodoro timer](https://www.youtube.com/watch?v=B1tjrnX160k) and [to do list](https://www.youtube.com/watch?v=QdTHUv79EZc) React apps
 
